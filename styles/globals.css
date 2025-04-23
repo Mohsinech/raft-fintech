@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Main Font */
+@font-face {
+  font-family: "raft-sans";
+  src: url("../public/assets/fonts/montreal/PPNeueMontreal-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "raft-sans";
+  src: url("../public/assets/fonts/montreal/PPNeueMontreal-Book.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "raft-sans";
+  src: url("../public/assets/fonts/montreal/PPNeueMontreal-Thin.ttf");
+  font-weight: 100;
+}
+
+/* Primary Font */
+@font-face {
+  font-family: "sf";
+  src: url("../public/assets/fonts/sf/SFPRODISPLAYBOLD.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "sf";
+  src: url("../public/assets/fonts/sf/SFPRODISPLAYMEDIUM.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "sf";
+  src: url("../public/assets/fonts/sf/SFPRODISPLAYREGULAR.ttf");
+  font-weight: 400;
+}

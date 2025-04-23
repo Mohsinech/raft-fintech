@@ -1,0 +1,12 @@
+.anchor {
+  width: fit-content;
+  height: fit-content;
+}
+
+.link {
+  color: #a0a0a0;
+  font-family: "sf", sans-serif;
+  line-height: 1;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+}

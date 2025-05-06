@@ -1,0 +1,33 @@
+.confident {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  height: 100%;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.5rem;
+}
+
+.content h1 {
+  color: #fff;
+  font-family: "raft-sans", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 0.05rem;
+  width: 60%;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.content h3 {
+  color: #bdbdbd;
+  font-family: "sf", sans-serif;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 0.025rem;
+}

@@ -1,3 +1,12 @@
+/* Shared Box Styles */
+.box {
+  background-color: #131313;
+  height: 500px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+/* Main Layout */
 .main {
   padding: 5rem 2rem;
   display: flex;
@@ -5,6 +14,7 @@
   gap: 10rem;
 }
 
+/* Content Section */
 .content {
   display: flex;
   flex-direction: column;
@@ -40,37 +50,70 @@
   gap: 2rem;
 }
 
-.first_row {
+.first_row,
+.second_row {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 2rem;
 }
 
-.fs_box {
-  background-color: #131313;
-  height: 500px;
-  border-radius: 1rem;
+.first_row {
+  grid-template-columns: 2fr 1fr;
+}
+
+.second_row {
+  grid-template-columns: 1fr 2fr;
   position: relative;
 }
 
-/* Loop Button */
-.loop_btn {
+/* Overlay Gradient for Boxes */
+.fs_box::before,
+.se_box::before,
+.th_box::before,
+.fo_box::before {
+  content: "";
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 80%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 50;
+  pointer-events: none;
+  border-radius: 1rem;
+}
+
+/* Loop Buttons */
+.loop_btn,
+.loop_btn_se {
+  position: absolute;
   z-index: 2;
 }
 
-/* Fs content */
+.loop_btn {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loop_btn_se {
+  bottom: 15%;
+  left: 0;
+}
+
+/* Full-Screen Content */
 .fs_content {
   position: absolute;
   bottom: 8%;
   left: 5%;
-  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  z-index: 999;
 }
 
 .fs_content h1 {
@@ -87,27 +130,13 @@
 .fs_content h3 {
   color: #bdbdbd;
   font-family: "sf", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: left;
   width: 90%;
   letter-spacing: 0.025rem;
 }
 
-.fs_box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-  border-radius: 1rem;
-}
-
+/* Background Overlay Image */
 .overlay {
   width: 100%;
   height: 100%;
@@ -115,27 +144,14 @@
   border-radius: 1rem;
 }
 
-.se_box {
-  background-color: #131313;
-  height: 500px;
-  border-radius: 1rem;
-}
-
-.second_row {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
-  position: relative;
-}
-
-.th_box {
-  background-color: #131313;
-  height: 500px;
-  border-radius: 1rem;
-}
-
+/* Specific Box Assignments */
+.fs_box,
+.se_box,
+.th_box,
 .fo_box {
   background-color: #131313;
   height: 500px;
   border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
 }

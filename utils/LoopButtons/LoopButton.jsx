@@ -26,10 +26,10 @@ export default function LoopButtons() {
         <motion.button
           key={index}
           className={styles.button}
-          initial={{ y: 80, opacity: 0, scale: 0.6 }}
+          initial={{ y: -80, opacity: 0, scale: 0.6 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
-          exit={{ y: -80, opacity: 0, scale: 0.5 }}
-          transition={{ duration: 0.6 }}
+          exit={{ opacity: 0, scale: 0 }}
+          transition={{ duration: 1, type: "spring", bounce: 0.2 }}
         >
           <img src="/assets/icons/arrow.png" alt="Arrow" />
           {buttons[index]}

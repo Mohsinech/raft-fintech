@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 /* LOGO */
@@ -21,10 +22,16 @@
 }
 
 /* Nav */
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav .ul {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 /* Auth Data */

@@ -1,0 +1,13 @@
+.cta {
+  width: 100%;
+  height: 100%;
+  background-color: #48d64c;
+  padding: 5rem 2rem;
+}
+
+.cta h1 {
+  color: #171717;
+  font-family: "sf", sans-serif;
+  font-size: 8.5rem;
+  line-height: normal;
+}

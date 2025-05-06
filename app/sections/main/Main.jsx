@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./main.module.css";
-import { LoopButtons } from "@/utils";
+import { FinanceCard, LoopButtons, LoopButtonsSe, ProfileCard } from "@/utils";
 
 const Main = () => {
   return (
@@ -36,18 +36,50 @@ const Main = () => {
 
           {/* Second box */}
           <div className={styles.se_box}>
+            <div className={styles.loop_btn_se}>
+              <LoopButtonsSe />
+            </div>
             <div className={styles.overlay}></div>
+            <div className={styles.fs_content}>
+              <h1>Smart investing</h1>
+              <h3>
+                Grow your wealth confidently with our personalized investment
+                solutions, tailored to your financial goals.
+              </h3>
+            </div>
           </div>
         </div>
 
         <div className={styles.second_row}>
           {/* Third box */}
           <div className={styles.th_box}>
+            <div className={styles.loop_btn}>
+              <ProfileCard />
+            </div>
             <div className={styles.overlay}></div>
+            <div className={styles.fs_content}>
+              <h1>Wealth Management</h1>
+              <h3>
+                Make informed decisions for your financial future with our
+                wealth management expertise.
+              </h3>
+            </div>
           </div>
           {/* Fourth box */}
           <div className={styles.fo_box}>
-            $ <div className={styles.overlay}></div>
+            <div className={styles.overlay}>
+              <div className={styles.loop_btn}>
+                <FinanceCard />
+              </div>
+              <div className={styles.overlay}></div>
+              <div className={styles.fs_content}>
+                <h1>Financial Planning</h1>
+                <h3>
+                  Achieve your financial dreams with our comprehensive financial
+                  planning services, guiding you toward a secure future.
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>

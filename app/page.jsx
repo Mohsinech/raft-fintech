@@ -1,5 +1,6 @@
 import React from "react";
-import { Features, Hero, Main } from "./sections";
+import { Benif, Confident, Cta, Features, Hero, Intro, Main } from "./sections";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,6 +8,18 @@ export default function Home() {
       <Hero />
       <Features />
       <Main />
+      <Benif />
+      <Cta />
+      <Confident />
+      <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+        <Image
+          src="/assets/images/group-bg.png"
+          alt="background"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </div>
+      <Intro />
     </main>
   );
 }

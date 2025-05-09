@@ -1,0 +1,27 @@
+.testimonials {
+  width: 100%;
+  height: 100%;
+  background-color: #48d64c;
+  padding: 5rem 2rem 7rem 2rem;
+  display: flex;
+
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.testimonials h1 {
+  color: #070606;
+  font-family: "sf", sans-serif;
+  font-size: 76px;
+  line-height: normal;
+  text-align: center;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}

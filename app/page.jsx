@@ -1,5 +1,14 @@
 import React from "react";
-import { Benif, Confident, Cta, Features, Hero, Intro, Main } from "./sections";
+import {
+  Benif,
+  Confident,
+  Cta,
+  Features,
+  Hero,
+  Intro,
+  Main,
+  Testimonials,
+} from "./sections";
 import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +29,7 @@ export default function Home() {
         />
       </div>
       <Intro />
+      <Testimonials />
     </main>
   );
 }

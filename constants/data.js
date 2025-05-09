@@ -40,4 +40,28 @@ const OptionData2 = [
   },
 ];
 
-export { OptionData, OptionData2 };
+const TestimonialData = [
+  {
+    id: 1,
+    text: "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
+    name: "Robert Fox",
+    role: "Happy RAFT User",
+    profile: "/assets/profiles/robert.png",
+  },
+  {
+    id: 2,
+    text: "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
+    name: "Cameron Williamson",
+    role: "Happy RAFT User",
+    profile: "/assets/profiles/cameron.png",
+  },
+  {
+    id: 3,
+    text: "RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams",
+    name: "Esther Howard",
+    role: "Happy RAFT User",
+    profile: "/assets/profiles/esther.png",
+  },
+];
+
+export { OptionData, OptionData2, TestimonialData };

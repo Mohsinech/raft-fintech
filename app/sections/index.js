@@ -5,5 +5,6 @@ import Benif from "./Benifs/Benif";
 import Cta from "./CTA/Cta";
 import Confident from "./Confident/Confident";
 import Intro from "./Intro/Intro";
+import Testimonials from "./Testimonials/Testimonials";
 
-export { Hero, Features, Main, Benif, Cta, Confident, Intro };
+export { Hero, Features, Main, Benif, Cta, Confident, Intro, Testimonials };

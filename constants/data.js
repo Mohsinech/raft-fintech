@@ -64,4 +64,31 @@ const TestimonialData = [
   },
 ];
 
-export { OptionData, OptionData2, TestimonialData };
+const DropData = [
+  {
+    id: 1,
+    title: "How do I create an account with RAFT?",
+    content:
+      "To create an account with RAFT, simply visit our homepage and click on the 'Sign Up' button. You’ll need to provide basic personal information, verify your identity, and link a valid bank account to get started.",
+  },
+  {
+    id: 2,
+    title: "How does RAFT ensure the security of my financial data?",
+    content:
+      "RAFT uses bank-level encryption, two-factor authentication (2FA), and continuous system monitoring to keep your data secure. We also follow strict compliance standards and do not share your information with third parties without your consent.",
+  },
+  {
+    id: 3,
+    title: "What types of transactions can I perform with RAFT?",
+    content:
+      "With RAFT, you can manage investments, transfer funds, pay bills, track spending, and set up automated savings. Our platform is designed to give you full control over your financial activity from a single dashboard.",
+  },
+  {
+    id: 4,
+    title: "What benefits does RAFT offer for wealth management?",
+    content:
+      "RAFT offers personalized financial insights, smart portfolio tracking, tax optimization tips, and access to certified advisors. Our goal is to help you grow and manage your wealth efficiently through data-driven tools and expert support.",
+  },
+];
+
+export { OptionData, OptionData2, TestimonialData, DropData };

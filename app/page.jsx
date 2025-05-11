@@ -3,6 +3,7 @@ import {
   Benif,
   Confident,
   Cta,
+  Faq,
   Features,
   Hero,
   Intro,
@@ -30,6 +31,7 @@ export default function Home() {
       </div>
       <Intro />
       <Testimonials />
+      <Faq />
     </main>
   );
 }

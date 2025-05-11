@@ -1,0 +1,41 @@
+.faq {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  height: 100%;
+}
+
+/* Content Section */
+.content {
+  overflow: hidden;
+  color: #989898;
+  font-size: 1.3rem;
+  font-family: "sf", sans-serif;
+  letter-spacing: 0.025rem;
+  margin-top: 0.5rem;
+}
+.content h1 {
+  color: #fff;
+  font-family: "raft-sans", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 0.05rem;
+  width: 60%;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.content h3 {
+  color: #bdbdbd;
+  font-family: "sf", sans-serif;
+  font-size: 1.2rem;
+  width: 50%;
+  letter-spacing: 0.025rem;
+}
+
+/*  */
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

@@ -8,13 +8,12 @@
 
 /* Content Section */
 .content {
-  overflow: hidden;
-  color: #989898;
-  font-size: 1.3rem;
-  font-family: "sf", sans-serif;
-  letter-spacing: 0.025rem;
-  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.5rem;
 }
+
 .content h1 {
   color: #fff;
   font-family: "raft-sans", sans-serif;

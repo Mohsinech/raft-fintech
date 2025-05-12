@@ -3,8 +3,23 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./intro.module.css";
 import { OptionDropSe } from "@/utils";
+import { motion } from "framer-motion";
+
+const DURATION = 1;
 
 const Intro = () => {
+  // Animation for the section
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   const imageRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -29,7 +44,14 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className={styles.intro} ref={sectionRef}>
+    <motion.section
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: DURATION, delay: 0.4 }}
+      className={styles.intro}
+      ref={sectionRef}
+    >
       <div className={styles.content}>
         <h2>Introducing</h2>
         <h1>Introducing RAFT's Next-Gen Cards</h1>
@@ -55,7 +77,7 @@ const Intro = () => {
       </div>
 
       <OptionDropSe />
-    </section>
+    </motion.section>
   );
 };
 

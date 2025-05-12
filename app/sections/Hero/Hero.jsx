@@ -1,10 +1,19 @@
 import React from "react";
 import styles from "./hero.module.css";
 import { CtaButton } from "@/components/shared";
+import { motion } from "framer-motion";
+
+const DURATION = 1;
+const EASE = [0.87, 0.13, 0, 1];
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: DURATION, ease: EASE }}
+      className={styles.hero}
+    >
       {/* Intro Button */}
       <button className={styles.intro_btn}>
         <span>Introducing Raft Cards</span>
@@ -30,7 +39,7 @@ const Hero = () => {
 
       {/* Grid Background */}
       <img src="./assets/images/grid.png" alt="grid" className={styles.grid} />
-    </section>
+    </motion.section>
   );
 };
 

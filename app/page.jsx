@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Benif,
@@ -14,24 +16,24 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <React.Fragment>
       <Hero />
       <Features />
       <Main />
       <Benif />
       <Cta />
       <Confident />
-      <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+      <section style={{ position: "relative", width: "100%", height: "100vh" }}>
         <Image
           src="/assets/images/group-bg.png"
           alt="background"
           fill
           style={{ objectFit: "cover" }}
         />
-      </div>
+      </section>
       <Intro />
       <Testimonials />
       <Faq />
-    </main>
+    </React.Fragment>
   );
 }

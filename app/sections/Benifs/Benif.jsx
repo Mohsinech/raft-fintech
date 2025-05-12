@@ -3,8 +3,23 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./benif.module.css";
 import { OptionDrop } from "@/utils";
+import { motion } from "framer-motion";
+
+const DURATION = 1;
 
 const Benif = () => {
+  // Animation for the section
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   // Refs
   const imageRef = useRef(null);
   const imageRef2 = useRef(null);
@@ -35,7 +50,14 @@ const Benif = () => {
   }, []);
 
   return (
-    <section className={styles.benif} ref={sectionRef}>
+    <motion.section
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: DURATION, delay: 0.4 }}
+      className={styles.benif}
+      ref={sectionRef}
+    >
       <div className={styles.content}>
         <h1>Your Financial Freedom, Your Way</h1>
         <h3>
@@ -61,7 +83,7 @@ const Benif = () => {
       </div>
 
       <OptionDrop />
-    </section>
+    </motion.section>
   );
 };
 

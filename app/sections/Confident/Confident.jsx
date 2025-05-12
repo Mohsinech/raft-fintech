@@ -2,10 +2,31 @@ import React from "react";
 import styles from "./confident.module.css";
 import { ConfidentCard } from "@/utils";
 import CreData from "@/components/CreData/CreData";
+import { motion } from "framer-motion";
+
+const DURATION = 1;
 
 const Confident = () => {
+  // Animation for the section
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   return (
-    <section className={styles.confident}>
+    <motion.section
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: DURATION, delay: 0.4 }}
+      className={styles.confident}
+    >
       <div className={styles.content}>
         <h1>Confidently Shape Your Financial Future</h1>
         <h3>
@@ -22,7 +43,7 @@ const Confident = () => {
 
       {/* Credentiel */}
       <CreData />
-    </section>
+    </motion.section>
   );
 };
 

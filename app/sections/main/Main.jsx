@@ -1,10 +1,31 @@
 import React from "react";
 import styles from "./main.module.css";
 import { FinanceCard, LoopButtons, LoopButtonsSe, ProfileCard } from "@/utils";
+import { motion } from "framer-motion";
+
+const DURATION = 1;
 
 const Main = () => {
+  // Animation for the section
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 50,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   return (
-    <section className={styles.main}>
+    <motion.section
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+      transition={{ duration: DURATION, delay: 0.4 }}
+      className={styles.main}
+    >
       <div className={styles.content}>
         <h1>Elevate Your Financial Journey With RAFT.</h1>
         <h3>
@@ -83,7 +104,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

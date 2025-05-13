@@ -30,3 +30,10 @@
 .blur_sides img {
   margin: 0 3rem;
 }
+
+/* Responsive For 1024px */
+@media (max-width: 1024px) {
+  .feature_content .blur_sides {
+    width: 600px;
+  }
+}

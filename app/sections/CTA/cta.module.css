@@ -29,3 +29,14 @@
     font-size: 6rem;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .cta {
+    padding: 4rem 1rem;
+  }
+
+  .cta h1 {
+    font-size: 4rem;
+  }
+}

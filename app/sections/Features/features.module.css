@@ -52,3 +52,29 @@
     margin: 0 3rem;
   }
 }
+
+/* Responsive 620px */
+@media (max-width: 620px) {
+  .features {
+    padding: 2.5rem 1rem 0 1rem;
+    gap: 4rem;
+  }
+
+  .feature_content {
+    gap: 2rem;
+  }
+
+  .feature_content h3 {
+    font-size: 0.8rem;
+  }
+
+  .feature_content .blur_sides {
+    width: 600px;
+    background-color: black;
+    padding: 2rem 0;
+  }
+
+  .blur_sides img {
+    margin: 0 2rem;
+  }
+}

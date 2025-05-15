@@ -123,3 +123,19 @@
     width: 80%;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .cardItem {
+    height: 550px;
+  }
+
+  .content h3 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+    width: 95%;
+  }
+}

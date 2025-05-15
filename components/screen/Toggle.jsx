@@ -42,7 +42,7 @@ const Menu = () => {
   return (
     <motion.div
       initial={{ height: 0 }}
-      animate={{ height: "100vh" }}
+      animate={{ height: "85vh", borderRadius: "0 0 10px 10px" }}
       transition={{ duration: DURATION, ease: [0.87, 0.13, 0, 1] }}
       exit={{ height: 0 }}
       className={styles.menu}
@@ -53,7 +53,7 @@ const Menu = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: DURATION,
-          delay: 0.5,
+          delay: 0.8,
         }}
         className={styles.nav}
       >
@@ -84,12 +84,12 @@ const Menu = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: DURATION,
-          delay: 0.5,
+          delay: 0.8,
         }}
         className={styles.cta}
       >
         <h3>Ready to get started?</h3>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4 max-sm:flex-col">
           <Link href="#" className="flex flex-1/2">
             Login
           </Link>

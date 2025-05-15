@@ -55,3 +55,20 @@
     width: 80%;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .grid {
+    margin-top: 0;
+    gap: 2rem;
+  }
+
+  .option h2 {
+    font-size: 1.5rem;
+  }
+
+  .option p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}

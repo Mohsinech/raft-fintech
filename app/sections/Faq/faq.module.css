@@ -64,3 +64,22 @@
     gap: 2rem;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .faq {
+    padding: 4rem 1rem;
+    gap: 4rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    width: 90%;
+    line-height: 1.4;
+  }
+
+  /*  */
+  .flex_col {
+    gap: 1.5rem;
+  }
+}

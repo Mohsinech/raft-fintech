@@ -80,3 +80,28 @@
     object-fit: cover;
   }
 }
+
+/* Responsive 620px */
+@media (max-width: 620px) {
+  .card {
+    padding: 0 1rem;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card .role {
+    font-size: 18px;
+  }
+
+  .card img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+}

@@ -9,7 +9,7 @@ const TestimonialCard = ({ text, name, role, profile }) => {
       </div>
 
       <div className="flex justify-between">
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 max-sm:gap-1.5">
           <h2>{name}</h2>
           <p className={styles.role}>{role}</p>
         </div>

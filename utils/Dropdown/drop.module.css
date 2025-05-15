@@ -42,3 +42,14 @@
     font-size: 1.8rem;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .head_content h1 {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    font-size: 1.2rem;
+  }
+}

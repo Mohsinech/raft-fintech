@@ -50,3 +50,15 @@
     width: 400px;
   }
 }
+
+/* Responsive For 620px */
+@media (max-width: 620px) {
+  .loop {
+    width: 140%;
+    gap: 1rem;
+  }
+  .button {
+    font-size: 1.2rem;
+    width: 400px;
+  }
+}

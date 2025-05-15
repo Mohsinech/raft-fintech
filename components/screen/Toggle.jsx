@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styles from "./toggle.module.css";
-import { CtaButton } from "../shared";
 import Link from "next/link";
 
 const DURATION = 1;

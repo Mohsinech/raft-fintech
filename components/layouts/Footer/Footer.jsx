@@ -26,7 +26,11 @@ const Footer = () => {
         <div className={styles.footer_data}>
           <div className={styles.code}>
             <div className={styles.qr_code}>
-              <img src="/assets/images/qr_code.png" alt="App Qr Code" />
+              <img
+                className={styles.qcode}
+                src="/assets/images/qr_code.png"
+                alt="App Qr Code"
+              />
               <div className="flex flex-col gap-2.5">
                 <h2>Scan to download App on the Playstore and Appstore.</h2>
                 <div className="flex items-center gap-2">

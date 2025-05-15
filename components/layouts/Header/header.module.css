@@ -40,3 +40,11 @@
   align-items: center;
   gap: 2rem;
 }
+
+/* Responsive For SM Devices  */
+@media (max-width: 820px) {
+  .nav,
+  .cta {
+    display: none;
+  }
+}

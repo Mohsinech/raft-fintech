@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CtaButton } from "@/components/shared";
 import { AnchorAnim } from "@/utils";
 import { motion } from "framer-motion";
+import Toggle from "@/components/screen/Toggle";
 
 const Header = () => {
   return (
@@ -20,6 +21,9 @@ const Header = () => {
             <h1>Raft</h1>
           </Link>
         </div>
+        {/* Toggle */}
+        <Toggle />
+        {/*  */}
 
         <nav className={styles.nav}>
           <ul className={styles.ul}>

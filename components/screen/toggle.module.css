@@ -1,0 +1,126 @@
+.rotate {
+  position: absolute;
+  top: 21px;
+  right: 40px;
+  z-index: 9999;
+  stroke: #000;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #48d64d;
+
+  overflow: hidden;
+}
+
+.nav {
+  padding: 8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.nav h3 {
+  color: #171717;
+  font-family: "sf", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #171717;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav ul li {
+  color: #000;
+  font-family: "raft-sans", sans-serif;
+  font-size: 6rem;
+  line-height: 1.1;
+}
+
+.nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+  padding: 0 3rem;
+}
+
+.cta h3 {
+  color: #171717;
+  font-family: "sf", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #171717;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: "raft-sans", sans-serif;
+  border: 2px solid #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #000;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cta .icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Hide It from Desktop Mode */
+@media (min-width: 1024px) {
+  .toggle {
+    display: none;
+  }
+}
+
+/* Resposive For 820px */
+@media (max-width: 820px) {
+  .nav {
+    padding: 7rem 3rem;
+    gap: 5rem;
+  }
+
+  .nav h3 {
+    font-size: 1.1rem;
+  }
+
+  .nav ul li {
+    font-size: 5.5rem;
+  }
+
+  .cta h3 {
+    font-size: 1.1rem;
+  }
+
+  .cta a {
+    font-size: 3.5rem;
+  }
+}

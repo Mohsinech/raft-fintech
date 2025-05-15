@@ -33,7 +33,6 @@ const Faq = () => {
       initial="initial"
       whileInView="animate"
       transition={{ duration: DURATION, delay: 0.4 }}
-      // viewport={{ once: true }}
       className={styles.faq}
     >
       <div className={styles.content}>

@@ -25,3 +25,29 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
+
+/* Responsive For 1024px */
+@media (max-width: 1024px) {
+  .testimonials h1 {
+    font-size: 4rem;
+    width: 70%;
+  }
+}
+
+/* Responsive For 820px */
+@media (max-width: 820px) {
+  .testimonials {
+    padding: 4rem 2rem;
+    gap: 5rem;
+  }
+
+  .testimonials h1 {
+    font-size: 3rem;
+    width: 65%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
